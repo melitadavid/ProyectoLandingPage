@@ -1,0 +1,60 @@
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem; }
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/fondo1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30rem; }
+  main h2 {
+    font-size: 50px;
+    font-family: 'Poppins'; }
+
+/*SECTION PORTAFOLIO*/
+.portafolio {
+  height: 30rem;
+  display: flex;
+  justify-content: center; }
+  .portafolio h3 {
+    color: black; }
+
+/*SECTION ESTUDIOS*/
+.estudios {
+  background-color: #131785;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+/*SECTION SOBREMI*/
+.sobreMi {
+  background-color: #b44c4c;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  background-color: black;
+  height: 10rem; }

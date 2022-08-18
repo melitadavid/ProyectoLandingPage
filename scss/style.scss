@@ -12,6 +12,12 @@ header{
     justify-content: space-around;
     align-items: center;
     height: 5rem;
+    .home{
+        color: black;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+    //position: fixed;
 
     nav{
         display: flex;
@@ -19,10 +25,18 @@ header{
         align-items: center;
         
         
+        
+        
         ul{
             display: flex;
             gap: 2rem;
             list-style: none;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            
         }
     }
 }
@@ -31,48 +45,135 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/fondo1.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/fondo1.jpg);
     background-size:contain ;
     background-repeat: no-repeat;
     
 
     height: 30rem;
     h2{
-        font-size: 50px;
+        font-size: 5rem;
     font-family: 'Poppins';
+    color: white;
     }
 }
 
 /*SECTION PORTAFOLIO*/
 
 .portafolio{
-   
-    height: 30rem;
+    display: flex;
+    height: 35rem;
     display: flex;
     justify-content: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 0fr  ;
+    grid-template-areas: "subTitulo subTitulo subTitulo"
+                         " card1     card2      card3";
    
-    h3{
-        color: rgb(0, 0, 0);
+        .subTitulo{
+            grid-area: subTitulo;
+            margin: 1rem;
+            color: rgb(0, 0, 0);
+            h3{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+       
+        .card1{
+            grid-area: card1;
+            margin: 3rem;
+           
+            
+        }
+        .card2{
+            grid-area: card2;
+            margin: 3rem;
+           
+        }
+        .card3{
+            grid-area: card3;
+            margin: 3rem;
+        }
     }
-}
+   
+    
+   
+
 
 /*SECTION ESTUDIOS*/
 
-.estudios{
-    background-color: rgb(19, 23, 133);
-    height: 30rem;
+.conocimientos{
+    background-color: rgb(0, 0, 0);
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr  ;
+    grid-template-areas: "subTituloDos subTituloDos subTituloDos subTituloDos"
+                         " conocimientoUno  conocimientoDos  conocimientoTres  conocimientoCuatro"
+                         "conocimientoCinco conocimientoSeis conocimiento conocimiento";
+    
+
+            .subTituloDos{
+                grid-area: subTituloDos;
+            margin: 1rem;
+            color: rgb(255, 255, 255);
+            h3{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            }
+            .conocimientoUno{
+                grid-area:conocimientoUno ;
+                font-size: 4rem;
+                text-align: center;
+                color: orangered;
+            }
+            .conocimientoDos{
+                grid-area:conocimientoDos;
+                font-size: 4rem;
+                text-align: center;
+                color: rgb(27, 29, 157);
+            }
+            .conocimientoTres{
+                grid-area:conocimientoTres;
+                font-size: 4rem;
+                text-align: center;
+                color: rgb(220, 19, 177);
+            }
+            .conocimientoCuatro{
+                grid-area:conocimientoCuatro ;
+                font-size: 4rem;
+                text-align: center;
+                color: rgb(104, 0, 177);
+            }
+            .conocimientoCinco{
+                grid-area:conocimientoCinco ;
+                font-size: 4rem;
+                text-align: center;
+                color: rgb(137, 15, 15);
+            }
+            .conocimientoSeis{
+                grid-area:conocimientoSeis ;
+                font-size: 4rem;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
 
 }
 
 /*SECTION SOBREMI*/
 
 .sobreMi{
-    background-color: rgb(180, 76, 76);
-    height: 30rem;
+   
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,3 +184,6 @@ footer{
     background-color: black;
     height: 10rem;
 }
+
+
+

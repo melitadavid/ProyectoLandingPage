@@ -125,5 +125,18 @@ main {
   align-items: center; }
 
 footer {
-  background-color: black;
-  height: 10rem; }
+  background-color: #534c4c;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between; }
+  footer .derechos {
+    display: flex;
+    color: white;
+    padding: 1rem; }
+  footer .redes {
+    padding: 1rem;
+    display: flex;
+    color: white;
+    gap: 1rem; }
+    footer .redes a .imgRedes {
+      height: 2rem; }
